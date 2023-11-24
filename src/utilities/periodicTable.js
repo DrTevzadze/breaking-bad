@@ -113,6 +113,4 @@ const symbols = [
   "Og",
 ];
 
-console.log(symbols.length);
-
 export default symbols;
