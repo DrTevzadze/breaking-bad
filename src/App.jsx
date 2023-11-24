@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div>
-      <img src="./public/white.png" alt="Walter White" />
+      <img src="white.png" alt="Walter White" />
       <div className="content">
         <Logo result={first} />
         <Logo result={last} />
