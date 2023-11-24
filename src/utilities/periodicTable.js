@@ -129,6 +129,11 @@ const breakify = (input) => {
       break;
     }
   }
+
+  if (!result.length) {
+    result = [input, "", ""];
+  }
+
   return result;
 };
 

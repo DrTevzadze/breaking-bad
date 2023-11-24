@@ -4,7 +4,7 @@ function Input({ label, onChange }) {
       <label>
         {label}
         <br />
-        <input type="text" onChange={onChange} />
+        <input type="text" onChange={onChange} spellCheck={false} />
       </label>
     </div>
   );

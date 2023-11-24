@@ -1,8 +1,21 @@
 :root {
-  --background-color: rgb(20, 19, 19);
+  --background-color: radial-gradient(
+    circle,
+    rgba(45, 42, 42, 1) 30%,
+    rgba(36, 36, 36, 1) 60%,
+    rgba(15, 15, 15, 1) 100%
+  );
+  --logo: radial-gradient(
+    circle,
+    rgba(0, 108, 55, 1) 0%,
+    rgba(0, 65, 34, 1) 89%,
+    rgba(0, 59, 30, 1) 100%
+  );
   --font-clr: #fff;
   --font-large: 6rem;
   --font-medium: 2rem;
+  --font-small: 1.6rem;
+  --black-boarder: rgba(0, 0, 0, 0.7);
 }
 
 *,
@@ -14,30 +27,53 @@
 }
 
 body {
-  background-color: var(--background-color);
+  background: var(--background-color);
   color: var(--font-clr);
   display: grid;
   place-items: center;
   height: 100vh;
   overflow: hidden;
-  outline: 1px solid green;
 }
 
 .main-container {
-  outline: 3px solid red;
-  height: 50vh;
-  width: 50vh;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem;
 }
 
 .content {
   font-size: var(--font-large);
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
   padding: 2rem;
-  border: 1px solid green;
+  text-align: center;
+}
+
+.result {
+  background: var(--logo);
+  padding: 0.4rem;
+  border: 2px solid var(--black-boarder);
+  text-shadow: 1px 2px 2px var(--black-boarder);
+  font-size: calc(var(--font-large) + 0.3em);
+  margin: 4px;
 }
 
 .inputs {
-  padding: 3rem;
-  border: 1px solid rgb(118, 118, 7);
+  display: flex;
+}
+
+label {
+  font-size: var(--font-medium);
+}
+
+input {
+  font-size: var(--font-small);
+  font-family: serif;
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid #001008;
+  background-color: rgb(217, 216, 216);
+  padding: 0.4rem 0.5rem;
 }

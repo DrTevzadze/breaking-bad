@@ -19,22 +19,24 @@ function App() {
   }, [lastName]);
 
   return (
-    <div className="main-container">
+    <>
       <div className="content">
         <Logo result={first} />
         <Logo result={last} />
       </div>
-      <div className="inputs">
-        <Input
-          label={"First Name"}
-          onChange={(e) => setFirstName(e.target.value)}
-        />
-        <Input
-          label={"Last Name"}
-          onChange={(e) => setLastName(e.target.value)}
-        />
+      <div className="main-container">
+        <div className="inputs">
+          <Input
+            label={"First Name"}
+            onChange={(e) => setFirstName(e.target.value)}
+          />
+          <Input
+            label={"Last Name"}
+            onChange={(e) => setLastName(e.target.value)}
+          />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
