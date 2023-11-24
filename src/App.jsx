@@ -1,4 +1,6 @@
 import "./App.css";
+import Input from "./components/Input";
+import symbols from ".//utilities/periodicTable";
 
 function App() {
   return (
@@ -8,14 +10,8 @@ function App() {
         <div className="lastname">Tevzadze</div>
       </div>
       <div className="inputs">
-        <label>
-          {"Firstname: "}
-          <input type="text" />
-        </label>
-        <label>
-          {" Lastname:"}
-          <input type="text" />
-        </label>
+        <Input label={"Firstname"} />
+        <Input label={"Lastname"} />
       </div>
     </div>
   );

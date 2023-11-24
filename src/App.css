@@ -37,4 +37,7 @@ body {
   border: 1px solid green;
 }
 
-
+.inputs {
+  padding: 3rem;
+  border: 1px solid rgb(118, 118, 7);
+}
