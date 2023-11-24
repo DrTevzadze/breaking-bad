@@ -1,17 +1,28 @@
 import "./App.css";
 import Input from "./components/Input";
-import { useState } from "react";
-import symbols from ".//utilities/periodicTable";
+import { useEffect, useState } from "react";
+import breakify from ".//utilities/periodicTable";
+import Logo from "./components/Logo";
 
 function App() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
+  const [first, setFirst] = useState(["", "", ""]);
+  const [last, setLast] = useState(["", "", ""]);
+
+  useEffect(() => {
+    setFirst(breakify(firstName));
+  }, [firstName]);
+
+  useEffect(() => {
+    setLast(breakify(lastName));
+  }, [lastName]);
 
   return (
     <div className="main-container">
       <div className="content">
-        <div className="firstname">David</div>
-        <div className="lastname">Tevzadze</div>
+        <Logo result={first} />
+        <Logo result={last} />
       </div>
       <div className="inputs">
         <Input

@@ -113,4 +113,23 @@ const symbols = [
   "Og",
 ];
 
-export default symbols;
+const breakify = (input) => {
+  let result = [];
+
+  for (let i = 0; i < input.length; i++) {
+    const oneChar = input[i].toUpperCase();
+    const twoChar = `${oneChar}${input[i + 1]}`;
+
+    if (symbols.includes(twoChar)) {
+      result = [input.slice(0, i), twoChar, input.slice(i + 2, input.length)];
+      break;
+    }
+    if (symbols.includes(oneChar)) {
+      result = [input.slice(0, i), oneChar, input.slice(i + 1, input.length)];
+      break;
+    }
+  }
+  return result;
+};
+
+export default breakify;
