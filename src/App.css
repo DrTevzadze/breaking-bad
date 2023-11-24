@@ -51,6 +51,15 @@ body {
   text-align: center;
 }
 
+img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  z-index: -1;
+  opacity: 0.5;
+}
+
 .result {
   background: var(--logo);
   padding: 0.4rem;
@@ -76,4 +85,12 @@ input {
   border: 1px solid #001008;
   background-color: rgb(217, 216, 216);
   padding: 0.4rem 0.5rem;
+}
+
+@media (max-width: 750px) {
+  :root {
+    --font-small: 1rem;
+    --font-large: 5rem;
+    --font-medium: 1.7rem;
+  }
 }

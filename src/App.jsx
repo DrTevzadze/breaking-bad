@@ -19,7 +19,8 @@ function App() {
   }, [lastName]);
 
   return (
-    <>
+    <div>
+      <img src="./public/white.png" alt="Walter White" />
       <div className="content">
         <Logo result={first} />
         <Logo result={last} />
@@ -36,7 +37,7 @@ function App() {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
