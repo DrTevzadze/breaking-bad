@@ -1,7 +1,21 @@
+:root {
+  --background-color: rgb(20, 19, 19);
+  --font-clr: #fff;
+}
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--font-clr);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  overflow: hidden;
 }
