@@ -56,7 +56,7 @@ body {
   padding: 0.4rem;
   border: 2px solid var(--black-boarder);
   text-shadow: 1px 2px 2px var(--black-boarder);
-  font-size: calc(var(--font-large) + 0.3em);
+  font-size: calc(var(--font-large) + 0.1em);
   margin: 4px;
 }
 
@@ -79,6 +79,10 @@ input {
   margin: 0.5rem 0;
 }
 
+.content > div:first-child {
+  margin-bottom: 1rem;
+}
+
 @media (max-width: 750px) {
   :root {
     --font-small: 1rem;
@@ -89,8 +93,8 @@ input {
 
 @media (max-width: 400px) {
   :root {
-    --font-small: 0.7rem;
-    --font-large: 3rem;
-    --font-medium: 1.2rem;
+    --font-small: 0.5rem;
+    --font-large: 2rem;
+    --font-medium: 0.8rem;
   }
 }
