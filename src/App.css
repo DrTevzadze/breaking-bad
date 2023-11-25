@@ -76,6 +76,7 @@ input {
   border: 1px solid #001008;
   background-color: rgb(217, 216, 216);
   padding: 0.4rem 0.5rem;
+  margin: 0.5rem 0;
 }
 
 @media (max-width: 750px) {
