@@ -94,7 +94,7 @@ input {
 @media (max-width: 400px) {
   :root {
     --font-small: 0.5rem;
-    --font-large: 2rem;
+    --font-large: 2.4rem;
     --font-medium: 0.8rem;
   }
 }
